@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavra de Deus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Palavra de Deus</h1>
+            <p>Encontre consolo e motivação nos versículos bíblicos</p>
+        </header>
+
+        <main>
+            <div class="theme-selector">
+                <label for="tema">Selecione um tema:</label>
+                <select id="tema" onchange="mostrarVersiculo()">
+                    <option value="">Escolha um tema</option>
+                    <option value="depressao">Depressão</option>
+                    <option value="ansiedade">Ansiedade</option>
+                    <option value="motivacao">Falta de Motivação</option>
+                    <option value="amor">Amor</option>
+                    <option value="perda">Lidar com a Perda</option>
+                    <option value="autoestima">Falta de Autoestima</option>
+                </select>
+            </div>
+            <div id="versiculo" class="versiculo">
+                <p>Escolha um tema para ver um versículo motivacional.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
